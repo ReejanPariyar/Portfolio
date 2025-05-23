@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Neon Portfolio</title>
+
+    <!-- Bootstrap CSS: Core framework for responsive layout and components -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Your custom styles for the site -->
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-- Font Awesome CSS for icons (multiple versions included) -->
+
+    <!-- Version 6.4.0 from cdnjs (popular stable version) -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Another 6.4.0 link repeated (can be removed to optimize) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS CSS for scroll animations (version 2.3.4) -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome version 6.5.0 from cdnjs with integrity & crossorigin -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-pap5BzQvR5vsrX6eTxSxUO2F/0ZuBHz3S7+cqDgcn5e1Q2sOfHOAqya6WnN5z7g4l1Et5h0J3CM9bbNvmQ3fQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Awesome version 5.15.4 for backwards compatibility -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Another AOS CSS link, version 2.3.4 repeated (can be removed to optimize) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS version 2.3.1 (older version included as well) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Inline CSS for .client-logo styling -->
+    <style>
+      .client-logo {
+        height: 100px !important;
+        width: auto !important;
+        object-fit: contain !important;
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .client-logo:hover {
+        transform: scale(1.15);
+        box-shadow: none !important; /* no shadow on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container no-brand">
+        <!-- No brand, just hamburger and menu -->
+        <button class="navbar__toggle" aria-label="navbarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbarMenu">
+          <li class="navbar__item">
+            <a href="#hero" class="navbar__link" tabindex="0">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__link" tabindex="0">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#techstack" class="navbar__link" tabindex="0">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link" tabindex="0">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#experience" class="navbar__link" tabindex="0"
+              >Experience</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#reviews" class="navbar__link" tabindex="0">Reviews</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link" tabindex="0">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--=========================HERO SECTION======================-->
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Column -->
+          <div class="col-md-6 text-light mb-5 mb-md-0">
+            <div class="glass-box p-4">
+              <h1 class="hero-title mb-3">
+                Hi, I’m <span class="accent">Reejan Pariyar</span>
+              </h1>
+              <p class="hero-subtitle">Developer • Designer • Dreamer</p>
+              <div
+                class="btn-group-wrapper d-flex gap-3 mt-4 flex-wrap justify-content-start"
+              >
+                <a href="#projects" class="neon-btn text-center"
+                  >Explore Projects</a
+                >
+                <a
+                  href="cv/Reejan_Pariyar_CV.pdf"
+                  class="neon-btn-inverse text-center"
+                  download
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Image/Animation Column -->
+          <div class="col-md-6 text-center">
+            <img
+              src="img/Hero.pp.png"
+              alt="Your Avatar"
+              class="img-fluid hero-image w-100"
+              style="width: 500px; height: auto"
+            />
+            <!-- You can replace this with a Lottie animation or a glowing SVG -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========================PROJECTS SECTION======================-->
+    <section id="projects" class="projects-section py-5">
+      <div class="container">
+        <h2 class="section-title mb-4 text-center">My Projects</h2>
+        <div class="filter-buttons text-center mb-4">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+        </div>
+
+        <div class="row g-4 project-grid">
+          <!-- Project Card 1 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="web"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/Portfolio website.webp"
+                  alt="Portfolio Website Screenshot"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-desc">
+                Modern responsive portfolio with neon glass style.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span> <span>CSS</span> <span>Bootstrap</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-live-site-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-github-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="uiux"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/finance app.png"
+                  alt="Mobile App UI Design"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">Mobile App UI</h3>
+              <p class="project-desc">
+                Sleek and user-friendly UI for a finance app.
+              </p>
+              <div class="tech-tags">
+                <span>Figma</span> <span>Adobe XD</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-live-ui-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-ui-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="python"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/school management system.png"
+                  alt="School Management Tool"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">School Management Tool</h3>
+              <p class="project-desc">
+                Desktop app built with Python and Tkinter.
+              </p>
+              <div class="tech-tags">
+                <span>Python</span> <span>Tkinter</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-school-tool-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-school-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 4 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="web"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/codebrick.png"
+                  alt="Codebrick"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">CodeBrick Learning App</h3>
+              <p class="project-desc">
+                Interactive step-by-step coding tutor using Python and HTML.
+              </p>
+              <div class="tech-tags">
+                <span>Python</span> <span>HTML</span> <span>JavaScript</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-school-tool-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-school-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more project cards here -->
+          <!-- Project Card 4 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="web"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/food website.jpeg"
+                  alt="Food Website"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">Food Website</h3>
+              <p class="project-desc">
+                This food website project features a clean and modern layout,
+                showcasing menus, specials, and user-friendly design using HTML,
+                CSS, and JavaScript.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span> <span>CSS</span> <span>Bootstrap</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-school-tool-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-school-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 5 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="web"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/restaurant website.png"
+                  alt="Restaurant Website"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">Restaurant Website</h3>
+              <p class="project-desc">
+                A modern and responsive restaurant website designed to showcase
+                elegant menus, customer reviews, and table booking features.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+                <span>Bootstrap</span> <span>Responsive Design</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-school-tool-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-school-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 6 -->
+          <div
+            class="col-md-6 col-lg-4 project-card"
+            data-category="uiux"
+            data-aos="fade-up"
+          >
+            <div class="glass-box p-3">
+              <div class="project-img mb-3">
+                <img
+                  src="img/restaurant app.webp"
+                  alt="Restaurant App UI/Ux Design"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <h3 class="project-title">Restaurant App UI/UX Design</h3>
+              <p class="project-desc">
+                A clean and intuitive UI/UX design for a restaurant mobile app,
+                focusing on seamless food ordering, table reservations, and
+                user-friendly navigation.
+              </p>
+              <div class="tech-tags">
+                <span>Figma</span> <span>UI/UX Design</span>
+                <span>Adobe XD</span>
+              </div>
+              <div class="project-links d-flex justify-content-between mt-3">
+                <a
+                  href="https://your-school-tool-link.com"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fas fa-up-right-from-square me-1"></i>Live Preview
+                </a>
+                <a
+                  href="https://github.com/your-school-repo"
+                  class="btn glass-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fab fa-github me-1"></i>GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========================TECH STACK SECTION======================-->
+    <section id="techstack" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">My Tech Stack</h2>
+
+        <div class="row g-4 text-center">
+          <!-- Frontend -->
+          <div class="col-md-4">
+            <div class="glass-box p-4">
+              <h4 class="mb-3 neon-text">Frontend</h4>
+              <div
+                class="tech-icons d-flex flex-wrap justify-content-center gap-3"
+              >
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="HTML5"
+                >
+                  <i class="fab fa-html5 fa-2x text-warning"></i>
+                </div>
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="CSS3"
+                >
+                  <i class="fab fa-css3-alt fa-2x text-primary"></i>
+                </div>
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="Bootstrap"
+                >
+                  <i class="fab fa-bootstrap fa-2x text-purple"></i>
+                </div>
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="JavaScript"
+                >
+                  <i class="fab fa-js-square fa-2x text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="col-md-4">
+            <div class="glass-box p-4">
+              <h4 class="mb-3 neon-text">Backend</h4>
+              <div
+                class="tech-icons d-flex flex-wrap justify-content-center gap-3"
+              >
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="Python"
+                >
+                  <i class="fab fa-python fa-2x text-info"></i>
+                </div>
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="C Language"
+                >
+                  <img src="img/c.png" alt="C" width="32" />
+                </div>
+                <!-- Add more backend tech -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-md-4">
+            <div class="glass-box p-4">
+              <h4 class="mb-3 neon-text">Tools & Design</h4>
+              <div
+                class="tech-icons d-flex flex-wrap justify-content-center gap-3"
+              >
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="Git"
+                >
+                  <i class="fab fa-git-alt fa-2x text-danger"></i>
+                </div>
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="Figma"
+                >
+                  <i class="fab fa-figma fa-2x text-pink"></i>
+                </div>
+                <div
+                  class="tooltip-wrapper"
+                  data-bs-toggle="tooltip"
+                  title="VS Code"
+                >
+                  <img src="img/vscode.png" alt="VS Code" width="32" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========================ABOUT ME SECTION======================-->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+          <!-- Text content -->
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="glass-box p-4">
+              <p>
+                Hello! I’m Reejan Pariyar, a passionate software developer and
+                UI/UX designer blending creativity with code. I love crafting
+                sleek, modern interfaces with a touch of neon and glass effects.
+                My goal is to deliver not just functionality but experiences
+                that wow users and clients alike.
+              </p>
+              <p>Currently, I’m focused on expanding my skills in:</p>
+              <ul class="about-skills">
+                <li>Frontend development (HTML, CSS, Bootstrap, JavaScript)</li>
+                <li>UI/UX design with Figma and Adobe XD</li>
+                <li>Python programming and app development</li>
+                <li>
+                  Building scalable projects with clean, maintainable code
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Graphic / Animation placeholder -->
+          <div class="col-md-6 text-center" data-aos="fade-left">
+            <!-- You can replace this with a Lottie animation or cool SVG -->
+            <img
+              src="img/me.jpeg"
+              alt="About Me Graphic"
+              class="about-img img-fluid"
+              style="max-width: 300px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========================EXPERIENCE SECTION======================-->
+    <section id="experience" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">My Experience</h2>
+
+        <div class="row g-4">
+          <!-- Experience Card 1 -->
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="glass-box p-4 h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="img/codepixels.png"
+                  alt="Company 1 Logo"
+                  class="me-3"
+                  style="width: 50px; height: 50px"
+                />
+                <div>
+                  <h5 class="mb-1">Junior Frontend Developer</h5>
+                  <p class="mb-0 text-light-muted">
+                    CodePixels · Jun 2023 – Jan 2024
+                  </p>
+                </div>
+              </div>
+              <p>
+                Developed responsive web components using HTML, CSS, and
+                Bootstrap. Helped redesign client UI interfaces with a modern,
+                mobile-first approach.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span> <span>CSS</span> <span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="glass-box p-4 h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="img/fiverr.svg"
+                  alt="Freelance Client Logo"
+                  class="me-3"
+                  style="width: 50px; height: 50px"
+                />
+                <div>
+                  <h5 class="mb-1">Freelance UI/UX Designer</h5>
+                  <p class="mb-0 text-light-muted">
+                    Freelance · Mar 2024 – Present
+                  </p>
+                </div>
+              </div>
+              <p>
+                Designed and prototyped mobile and web app UIs for finance and
+                education startups. Used Figma to create interactive designs
+                based on client needs.
+              </p>
+              <div class="tech-tags">
+                <span>Figma</span> <span>UI/UX</span> <span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+    <!--=========================REVIEWS SECTION======================-->
+    <section id="reviews" class="reviews-section py-5">
+      <div class="container py-5">
+        <h2
+          class="section-title mb-5 text-center text-white"
+          data-aos="fade-down"
+        >
+          What People Say
+        </h2>
+
+        <!-- Carousel with fade -->
+        <div
+          id="testimonialCarousel"
+          class="carousel carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="8000"
+          data-bs-pause="hover"
+        >
+          <div class="carousel-inner">
+            <!-- Testimonial item 1 -->
+            <div class="carousel-item active" data-aos="fade-up">
+              <div class="glass-box testimonial-card mx-auto" data-tilt>
+                <div class="testimonial-header d-flex align-items-center mb-4">
+                  <div class="client-photo-wrapper">
+                    <img
+                      src="img/alice johnson.jpg"
+                      alt="Alice Johnson"
+                      class="client-photo"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="client-name neon-text mb-1">Alice Johnson</h5>
+                    <small class="text-muted">Product Manager, InnovateX</small>
+                  </div>
+                </div>
+                <p class="review-text fst-italic">
+                  <i class="fas fa-quote-left neon-quote me-2"></i>
+                  Working with Reejan Pariyar was a game changer. Professional,
+                  timely, and highly skilled.
+                </p>
+                <div class="star-rating mt-3">
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star-half-alt star-glow"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial item 2 -->
+            <div class="carousel-item" data-aos="fade-up">
+              <div class="glass-box testimonial-card mx-auto" data-tilt>
+                <div class="testimonial-header d-flex align-items-center mb-4">
+                  <div class="client-photo-wrapper">
+                    <img
+                      src="img/michael smith.jpg"
+                      alt="Michael Smith"
+                      class="client-photo"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="client-name neon-text mb-1">Michael Smith</h5>
+                    <small class="text-muted">Lead Developer, CodeWorks</small>
+                  </div>
+                </div>
+                <p class="review-text fst-italic">
+                  <i class="fas fa-quote-left neon-quote me-2"></i>
+                  Reejan delivered exactly what we needed, with great
+                  communication throughout.
+                </p>
+                <div class="star-rating mt-3">
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial item 3 -->
+            <div class="carousel-item" data-aos="fade-up">
+              <div class="glass-box testimonial-card mx-auto" data-tilt>
+                <div class="testimonial-header d-flex align-items-center mb-4">
+                  <div class="client-photo-wrapper">
+                    <img
+                      src="img/sophia carter.jpg"
+                      alt="Sophia Carter"
+                      class="client-photo"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="client-name neon-text mb-1">Sophia Carter</h5>
+                    <small class="text-muted">UX Designer, PixelTree</small>
+                  </div>
+                </div>
+                <p class="review-text fst-italic">
+                  <i class="fas fa-quote-left neon-quote me-2"></i>
+                  Reejan’s designs are sleek and intuitive. I loved how quickly
+                  he understood our vision and brought it to life.
+                </p>
+                <div class="star-rating mt-3">
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star-half-alt star-glow"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial item 4 -->
+            <div class="carousel-item" data-aos="fade-up">
+              <div class="glass-box testimonial-card mx-auto" data-tilt>
+                <div class="testimonial-header d-flex align-items-center mb-4">
+                  <div class="client-photo-wrapper">
+                    <img
+                      src="img/emily zhang.jpg"
+                      alt="Emily Zhang"
+                      class="client-photo"
+                    />
+                  </div>
+                  <div>
+                    <h5 class="client-name neon-text mb-1">Emily Zhang</h5>
+                    <small class="text-muted">Founder, BrightNest</small>
+                  </div>
+                </div>
+                <p class="review-text fst-italic">
+                  <i class="fas fa-quote-left neon-quote me-2"></i>
+                  Highly professional and creative. Reejan exceeded all
+                  expectations with his development and design work.
+                </p>
+                <div class="star-rating mt-3">
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                  <i class="fas fa-star star-glow"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--=========================CONTACT SECTION======================-->
+    <section id="contact" class="contact-section py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Get In Touch</h2>
+        <p class="mb-5 text-light fs-5">Let’s connect! Reach out anytime.</p>
+        <div class="social-icons d-flex flex-wrap justify-content-center gap-4">
+          <a
+            href="https://www.facebook.com/share/15Q3DwCufh/"
+            target="_blank"
+            class="social-link"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://wa.me/9808059537"
+            target="_blank"
+            class="social-link"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://x.com/reejan_official"
+            target="_blank"
+            class="social-link"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/reejan-pariyar-b1b865292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/Ree-2"
+            target="_blank"
+            class="social-link"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/reejan.official?igsh=MWZ0cnh1bXY2eThkZw=="
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="mailto:reejan.pariyar.official@gmail.com"
+            target="_blank"
+            class="social-link"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--=========================ORB SECTION======================-->
+    <!-- Orb Container -->
+    <!-- <div class="orb-container">
+      <div class="orb" id="orbToggle"></div>
+      <div class="fan-menu" id="fanMenu">
+        <a href="#hero" class="fan-item" title="Home">HOME</a>
+        <a href="#projects" class="fan-item" title="Projects">PROJECTS</a>
+        <a href="#techstack" class="fan-item" title="Tech Stack">SKILLS</a>
+        <a href="#about" class="fan-item" title="About Me">ABOUT ME</a>
+        <a href="#experience" class="fan-item" title="Experience">EXPERIENCE</a>
+        <a href="#reviews" class="fan-item" title="Reviews">REVIEWS</a>
+        <a href="#contact" class="fan-item" title="Contact">CONTACT</a>
+      </div>
+    </div> -->
+
+    <!--=========================FOOTER SECTION======================-->
+    <footer class="footer-section py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="footer-brand text-light fw-bold fs-5 mb-3 mb-md-0">
+          © 2025 Reejan Pariyar
+        </div>
+
+        <ul class="footer-links list-unstyled d-flex gap-4 mb-3 mb-md-0">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#reviews" class="footer-link">Reviews</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+
+        <div class="footer-social d-flex gap-3">
+          <a
+            href="https://www.linkedin.com/in/reejan-pariyar-b1b865292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="footer-social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/Ree-2"
+            target="_blank"
+            class="footer-social-link"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="mailto:reejan.pariyar.official@gmail.com"
+            target="_blank"
+            class="footer-social-link"
+            aria-label="Email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector(".navbar__toggle");
+        const menu = document.querySelector(".navbar__menu");
+
+        toggle.addEventListener("click", () => {
+          const isOpen = menu.classList.toggle("open");
+          toggle.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", isOpen);
+        });
+      });
+    </script>
+    <!--=========================SCRIPTS SECTION======================-->
+    <script>
+      document.querySelectorAll("[data-tilt]").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const midX = rect.width / 2;
+          const midY = rect.height / 2;
+
+          const rotateX = ((y - midY) / midY) * 10; // max 10 deg tilt
+          const rotateY = ((x - midX) / midX) * -10;
+
+          card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform =
+            "perspective(600px) rotateX(0deg) rotateY(0deg) scale(1)";
+        });
+      });
+    </script>
+    <script>
+      // Wait until DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        // Select the about section's row container
+        const aboutSection = document.querySelector("#about .row");
+
+        // Create an IntersectionObserver to add 'fade-in' class when aboutSection is 20% visible
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Start observing the aboutSection
+        observer.observe(aboutSection);
+      });
+    </script>
+
+    <script>
+      // Wait until DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all filter buttons and project cards
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+
+        // Add click event to each filter button
+        filterButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Remove 'active' class from all buttons, add to clicked button
+            filterButtons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            // Get filter category from button's data attribute
+            const filter = btn.getAttribute("data-filter");
+
+            // Show/hide project cards based on selected filter
+            projectCards.forEach((card) => {
+              if (
+                filter === "all" ||
+                card.getAttribute("data-category") === filter
+              ) {
+                card.style.display = "block";
+                card.classList.add("fade-in"); // add fade-in animation
+              } else {
+                card.style.display = "none";
+                card.classList.remove("fade-in");
+              }
+            });
+          });
+        });
+
+        // IntersectionObserver for fade-in animation on project cards scroll
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        // Observe each project card
+        projectCards.forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
+
+    <script>
+      // Initialize Bootstrap tooltips on all elements with data-bs-toggle="tooltip"
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+
+    <!-- AOS (Animate on Scroll) library JS included twice with different versions -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Initialize AOS with options (animations run once, duration 800ms, easing)
+      AOS.init({
+        once: true,
+        duration: 800,
+        easing: "ease-in-out",
+      });
+    </script>
+
+    <script>
+      // Wait until DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        const circles = document.querySelectorAll(".progress-circle");
+
+        circles.forEach((circle) => {
+          const progress = +circle.getAttribute("data-progress");
+          const svgNS = "http://www.w3.org/2000/svg";
+
+          // Create SVG element to hold circles
+          const svg = document.createElementNS(svgNS, "svg");
+          svg.setAttribute("viewBox", "0 0 80 80");
+
+          // Background circle element
+          const bgCircle = document.createElementNS(svgNS, "circle");
+          bgCircle.setAttribute("class", "bg");
+          bgCircle.setAttribute("cx", 40);
+          bgCircle.setAttribute("cy", 40);
+          bgCircle.setAttribute("r", 40 - 8 / 2);
+
+          // Progress circle element (to animate stroke)
+          const progressCircle = document.createElementNS(svgNS, "circle");
+          progressCircle.setAttribute("class", "progress");
+          progressCircle.setAttribute("cx", 40);
+          progressCircle.setAttribute("cy", 40);
+          progressCircle.setAttribute("r", 40 - 8 / 2);
+
+          svg.appendChild(bgCircle);
+          svg.appendChild(progressCircle);
+          circle.appendChild(svg);
+
+          // Create div to show progress text inside the circle
+          const progressText = document.createElement("div");
+          progressText.classList.add("progress-text");
+          progressText.textContent = progress + "%";
+          circle.appendChild(progressText);
+
+          // Calculate circumference and offset for stroke-dashoffset animation
+          const circumference = 2 * Math.PI * (40 - 8 / 2);
+          const offset = circumference - (progress / 100) * circumference;
+
+          // Animate stroke dashoffset with slight delay
+          setTimeout(() => {
+            progressCircle.style.strokeDashoffset = offset;
+          }, 100);
+        });
+      });
+    </script>
+    <script>
+      const carousel = document.querySelector("#testimonialCarousel");
+      carousel.addEventListener("mouseenter", () => {
+        bootstrap.Carousel.getInstance(carousel).pause();
+      });
+      carousel.addEventListener("mouseleave", () => {
+        bootstrap.Carousel.getInstance(carousel).cycle();
+      });
+    </script>
+
+    <!-- AOS JS included multiple times (3 times here), all 2.3.4 -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Initialize AOS again with different duration (1000ms)
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Initialize AOS again (duplicate)
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <script>
+      // Theme switch toggle button logic
+      const switchBtn = document.getElementById("theme-switch");
+      const body = document.body;
+
+      // On page load, apply saved theme from localStorage
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        switchBtn.checked = true;
+      }
+
+      // Toggle dark mode on switch change and save preference
+      switchBtn.addEventListener("change", () => {
+        body.classList.toggle("dark-mode");
+        localStorage.setItem(
+          "theme",
+          body.classList.contains("dark-mode") ? "dark" : "light"
+        );
+      });
+    </script>
+
+    <script>
+      // Another tooltip initialization (duplicate of above)
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+
+    <!-- Bootstrap Bundle JS (includes Popper for tooltips/popovers) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const orb = document.querySelector(".orb");
+        const menu = document.querySelector(".fan-menu");
+
+        orb.addEventListener("click", function () {
+          orb.classList.toggle("active");
+          menu.classList.toggle("active");
+        });
+      });
+    </script> -->
+  </body>
+</html>
